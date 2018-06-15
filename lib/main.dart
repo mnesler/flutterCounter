@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         // counter didn't reset back to zero; the application is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'SpellCounter'),
+      home: new MyHomePage(title: 'SpellCounters'),
     );
   }
 }
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
   void _resetCounter() {
     setState(() {
-      _counter = 70;
+      _counter = 40;
     });
   }
 
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: new Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  new Icon(Icons.favorite),
+                //  new Icon(Icons.favorite),
                   new Text(
                       '$_counter',
                       style: new TextStyle(
@@ -127,16 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
             scrollDirection: Axis.vertical,
             children: <Widget>[
               counterView,
-              counterView,
-              counterView,
-              counterView,
-              counterView,
-              counterView,
-              counterView,
-              counterView,
-              counterView,
-              counterView,
-              counterView,
+  
             ]
         )
     );
